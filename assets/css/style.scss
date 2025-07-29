@@ -2,3 +2,26 @@
 ---
 
 @import 'jekyll-theme-merlot';
+
+.custom-box {
+  display: none;
+}
+.custom-sub-box {
+    display: none;
+}
+.custom-link {
+  display: none;
+}
+
+.quizz {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.notAnswer, .answer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
