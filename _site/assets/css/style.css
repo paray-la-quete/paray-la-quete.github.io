@@ -686,4 +686,18 @@ dd p:first-child {
   padding: 0 0.7em 0;
 }
 
+.fieldset {
+  text-align: center;
+}
+
+.valider {
+  font: inherit;
+  margin: 0.7em 0 0;
+}
+
+.result {
+  border: none;
+  padding-bottom: 0.7em;
+}
+
 /*# sourceMappingURL=style.css.map */
