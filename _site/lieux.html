@@ -17,6 +17,28 @@
         $('#main_content').headsmart()
       })
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const items = document.querySelectorAll('#carousel .carousel-item');
+        let current = 0;
+
+        function showItem(index) {
+          items.forEach((item, i) => {
+            item.style.display = (i === index) ? 'block' : 'none';
+          });
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', function () {
+          current = (current === 0) ? items.length - 1 : current - 1;
+          showItem(current);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function () {
+          current = (current === items.length - 1) ? 0 : current + 1;
+          showItem(current);
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -56,6 +78,39 @@
 
 <p>Peux-tu les retrouver ?</p>
 
+        <div id="carousel">
+          <div class="carousel-item" style="display:block;">
+            <img src="/assets/images/wordcloud.png" alt="parc des chapelains">
+          </div>
+          <div class="carousel-item" style="display:none;">
+            <div>
+              <ul>
+                <li>Mon premier est un lieu de prière</li>
+                <li>Mon second est toujours deuxième</li>
+                <li>Mon troisième échappe au nourrisson</li>
+                <li>Mon quatrième exprime son désaccord</li>
+              </ul>
+              <p>Mon tout est un lieu marial</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="display:none;">
+            <div>
+              <p>En ces jours-là, Marie se mit en route et se rendit avec empressement vers la région montagneuse, dans une ville de Judée.</p>
+              <p>Elle entra dans la maison de Zacharie et salua Élisabeth.</p>
+              <p>Or, quand Élisabeth entendit la salutation de Marie, l’enfant tressaillit en elle. Alors, Élisabeth fut remplie d’Esprit Saint.</p>
+            </div>
+            </div>
+          <div class="carousel-item" style="display:none;">
+            <img src="/assets/images/basilicbasilic.png"  alt="basilique">
+          </div>
+          <div class="carousel-item" style="display:none;">
+            <img src="/assets/images/rebus.png"  alt="claude la colombiere">
+          </div>
+        </div>
+        <div class="carousel-command">
+          <button id="prevBtn" class="command" style="transform: rotate(180deg);"><img src="/assets/images/chevron-2x.png"></button>
+          <button id="nextBtn" class="command"><img src="/assets/images/chevron-2x.png"></button>
+        </div>
       </section>
 
       <footer>
