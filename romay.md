@@ -7,7 +7,7 @@ answer4: romay3.jpg
 answer: 2
 indice: Je suis la source de deux rayons, l'un bleu et l'autre rouge.
 ---
-Wahou ! Tu vas vite, c'est impressionnant !
+Wahou ! Tu vas vite ! Marie-Marguerite Auplat serait fière de toi.
 
 Pour avoir ton indice, il faut d'abord répondre à cette question :
 
