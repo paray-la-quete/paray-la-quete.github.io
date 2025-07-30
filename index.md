@@ -4,12 +4,14 @@ layout: default
 
 La ville de Paray-Le-Monial cache un secret bien gardé.
 
-Pour le découvrir, 5 indices ont été cachés dans 5 lieux secrets.
-
-Si tu veux trouver ce secret, j'ai peut-être quelque chose pour t'aider.
-
 Marie-Marguerite Auplat a passé de longues années à percer le mystère.
 
-J'ai retrouvé ses notes et un vieux plan de la ville.
+Malheureusement, elle n'a pas eu le temps de tout découvrir.
 
-Saura-tu les décrypter ses mots et trouver les indices ?
+Avec ton aide, peut-être que nous pourrons y arriver.
+
+Marie-Marguerite Auplat a caché des indices dans 5 lieux secrets de la ville.
+
+Elle a laissé des notes cryptées pour guider ceux qui oseront chercher.
+
+Dès que tu auras collecté assez d'indices, tu pourras tenter de résoudre l'énigme et découvrir le secret de Paray-le-Monial.
