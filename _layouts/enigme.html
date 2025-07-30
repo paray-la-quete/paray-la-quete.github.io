@@ -31,8 +31,10 @@
           if (answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
           || answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
             indiceDiv.style.display = 'block';
+            indiceDiv.scrollIntoView({ behavior: 'smooth' });
           } else {
             errorDiv.style.display = 'block';
+            errorDiv.scrollIntoView({ behavior: 'smooth' });
           }
         });
       });

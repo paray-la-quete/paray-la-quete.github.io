@@ -29,7 +29,7 @@
             e.preventDefault();
             indiceDiv.style.display = 'none';
             errorDiv.style.display = 'block';
-            window.scrollTo(0,document.body.scrollHeight);
+            errorDiv.scrollIntoView({ behavior: 'smooth' });
           });
         });
 
@@ -38,7 +38,8 @@
             e.preventDefault();
             indiceDiv.style.display = 'block';
             errorDiv.style.display = 'none';
-            window.scrollTo(0,document.body.scrollHeight);
+            indiceDiv.scrollIntoView({ behavior: 'smooth' });
+
           });
         });
 
