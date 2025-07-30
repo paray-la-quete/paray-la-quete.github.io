@@ -26,3 +26,4 @@ et découvrir ainsi le secret de Paray-le-Monial.
 N.B. :
 - Le plan affiche plus de lieux que ceux où Marie-Marguerite Auplat a caché des indices.
 - Vous pouvez adapter le parcours en ne collectant qu'une partie des indices.
+- L'ordre des lieux n'a pas d'importance.
