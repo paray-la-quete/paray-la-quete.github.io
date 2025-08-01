@@ -7,7 +7,7 @@ answer4: basilique3.jpg
 answer: 2
 indice: Qui a vu la tunique de Saint Charles de Foucauld m'a vu
 ---
-Tu avances bien, félicitation ! Tu suis la piste de Marie-Marguerite Auplat comme un champion
+Tu avances bien, félicitations ! Tu suis la piste de Marie-Marguerite Auplat comme un champion
 
 Tu t'approches de l'indice, mais peux-tu d'abord répondre à cette question :
 

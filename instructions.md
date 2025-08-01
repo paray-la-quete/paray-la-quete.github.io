@@ -8,11 +8,11 @@ une exploratrice ayant caché dans la ville de Paray-le-Monial des indices menan
 En lisant les notes qu'elle a laissées,
 vous découvrirez les lieux où elle a dissimulé les indices.
 
-Vous pouvez vous aider du plan de la ville pour vous orienter,
+Vous pouvez vous aider du plan de la ville pour vous orienter
 et vous rendre dans les lieux indiqués.
 
 Dans chaque lieu, vous trouverez une balise avec un QR code ;
-scannez le pour accèder à la page du lieu.
+scannez-le pour accéder à la page du lieu.
 
 Vous y trouverez une question et,
 si vous répondez correctement, un indice pour résoudre l'énigme finale.
