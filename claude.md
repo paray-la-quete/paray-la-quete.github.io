@@ -11,4 +11,4 @@ Félicitations, tu es sur la bonne voie ! Marie-Marguerite Auplat n'auras bient�
 
 Pour avoir l'indice, il te faut répondre à la question suivante :
 
-Quelle photo ne vient pas de la chapelle de Claude la Colombière ?
+Quelle photo ne vient pas de la chapelle de Saint Claude la Colombière ?
