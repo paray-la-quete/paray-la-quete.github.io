@@ -17,26 +17,6 @@
         $('#main_content').headsmart()
       })
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const button = document.getElementById('button');
-        const answerInput = document.getElementById('answer');
-        const indiceDiv = document.getElementById('indice');
-        const errorDiv = document.getElementById('error');
-
-        button.addEventListener('click', function (e) {
-          e.preventDefault();
-          indiceDiv.style.display = 'none';
-          errorDiv.style.display = 'none';
-          if (answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
-          || answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
-            indiceDiv.style.display = 'block';
-          } else {
-            errorDiv.style.display = 'block';
-          }
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -73,23 +53,8 @@
 
       <section id="main_content">
         {{ content }}
-        <form>
-          <fieldset class="fieldset">
-            <input type="text" id="answer" class="valider"/><br/>
-            <button id="button" class="valider">Valider</button>
-          </fieldset>
-        </form>
-
-        <div id="indice" style="display: none">
-          <p>Bravo ! Tu as trouvé le secret de Paray-Le-Monial !</p>
-          <p>Ici, Jésus a révélé son Cœur Sacré, signe de son Amour infini pour toi en particulier</p>
-          <p>Et il t'invite à vivre avec Lui et l'aimer en retour</p>
-          <img class="result" src="/assets/images/sacrecoeur2.png">
-        </div>
-
-        <div id="error" style="display: none">
-          <p>Oups, ce n'est pas la bonne réponse !</p>
-          <p>Tu peux réessayer.</p>
+        <div class="zoom-container">
+          <img id="zoomImg" src="/assets/images/map.png" alt="Zoomable image">
         </div>
       </section>
 

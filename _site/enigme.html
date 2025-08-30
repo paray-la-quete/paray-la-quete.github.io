@@ -28,8 +28,8 @@
           e.preventDefault();
           indiceDiv.style.display = 'none';
           errorDiv.style.display = 'none';
-          if (answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
-          || answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
+          if (answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
+          || answerInput.value.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
             indiceDiv.style.display = 'block';
           } else {
             errorDiv.style.display = 'block';
