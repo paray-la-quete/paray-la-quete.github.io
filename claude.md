@@ -7,7 +7,7 @@ answer4: claude3.jpg
 answer: 1
 indice: Je trône au sommet de Paris
 ---
-Félicitation, tu es sur la bonne voie ! Marie-Marguerite Auplat n'auras bientôt plus de secret pour toi.
+Félicitations, tu es sur la bonne voie ! Marie-Marguerite Auplat n'auras bientôt plus de secret pour toi.
 
 Pour avoir l'indice, il te faut répondre à la question suivante :
 
