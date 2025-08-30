@@ -109,6 +109,12 @@ footer, header, hgroup, menu, nav, section {
   font-family: "Open Sans", Myriad, Calibri, sans-serif;
 }
 
+footer span.ribbon-inner a.instructions {
+  font-size: .5em;
+  padding-bottom: 0px;
+  color: beige;
+}
+
 body {
   line-height: 1;
 }
