@@ -17,6 +17,26 @@
         $('#main_content').headsmart()
       })
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('button');
+        const answerInput = document.getElementById('answer');
+        const indiceDiv = document.getElementById('indice');
+        const errorDiv = document.getElementById('error');
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          indiceDiv.style.display = 'none';
+          errorDiv.style.display = 'none';
+          if (answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
+          || answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
+            indiceDiv.style.display = 'block';
+          } else {
+            errorDiv.style.display = 'block';
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -47,6 +67,21 @@
 
       <section id="main_content">
         {{ content }}
+        <form>
+          <fieldset>
+            <legend>{{ page.question }}</legend>
+            <input type="text" id="answer"/><br/>
+            <button id="button">Valider</button>
+          </fieldset>
+        </form>
+
+        <div id="indice" style="display: none">
+          tadam
+        </div>
+
+        <div id="error" style="display: none">
+          oupsy
+        </div>
       </section>
 
       <footer>

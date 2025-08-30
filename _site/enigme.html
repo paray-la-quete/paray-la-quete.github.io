@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=" media="screen">
+    <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width:640px)">
+    <link rel="stylesheet" href="/assets/css/non-screen.css" media="only screen and (max-width:640px)">
+
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/headsmart.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('button');
+        const answerInput = document.getElementById('answer');
+        const indiceDiv = document.getElementById('indice');
+        const errorDiv = document.getElementById('error');
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          indiceDiv.style.display = 'none';
+          errorDiv.style.display = 'none';
+          if (answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "sacre coeur"
+          || answerInput.value.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/œ/gu, "oe").replace(/-/gu, " ") === "coeur sacre") {
+            indiceDiv.style.display = 'block';
+          } else {
+            errorDiv.style.display = 'block';
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="shell">
+
+      <header>
+        <div class="ribbon-outer">
+          <a href="/" class="zip">
+          <div class="ribbon-inner">
+            <h1>Paray La Quete</h1>
+            <h2>A la recherche du secret de Paray-Le-Monial</h2>
+          </div>
+          </a>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </div>
+      </header>
+
+        <section id="downloads">
+          <span class="inner">
+            <a href="/lieux" class="zip">notes</a><a href="/plan" class="tgz">plan</a>
+          </span>
+        </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>Ahah ! Penses-tu pouvoir trouver le secret de Paray-le-Monial ?</p>
+
+        <form>
+          <fieldset>
+            <legend></legend>
+            <input type="text" id="answer"/><br/>
+            <button id="button">Valider</button>
+          </fieldset>
+        </form>
+
+        <div id="indice" style="display: none">
+          tadam
+        </div>
+
+        <div id="error" style="display: none">
+          oupsy
+        </div>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            
+            
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+
+      </footer>
+
+    </div>
+  </body>
+</html>

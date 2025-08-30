@@ -17,6 +17,25 @@
         $('#main_content').headsmart()
       })
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const button = document.getElementById('button');
+        const answerInput = document.getElementById('answer');
+        const indiceDiv = document.getElementById('indice');
+        const errorDiv = document.getElementById('error');
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          indiceDiv.style.display = 'none';
+          errorDiv.style.display = 'none';
+          if (answerInput.checked) {
+            indiceDiv.style.display = 'block';
+          } else {
+            errorDiv.style.display = 'block';
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -47,6 +66,40 @@
 
       <section id="main_content">
         {{ content }}
+        <form>
+          <fieldset>
+            <legend>{{ page.question }}</legend>
+            <label><input type="radio" name="radio"
+            {% if page.answer == 1 %}
+            id="answer"
+            {% endif %}
+            />{{ page.answer1 }}</label><br/>
+            <label><input type="radio" name="radio"
+                          {% if page.answer == 2 %}
+                          id="answer"
+                          {% endif %}
+            />{{ page.answer2 }}</label><br/>
+            <label><input type="radio" name="radio"
+                          {% if page.answer == 3 %}
+                          id="answer"
+                          {% endif %}
+            />{{ page.answer3 }}</label><br/>
+            <label><input type="radio" name="radio"
+                          {% if page.answer == 4 %}
+                          id="answer"
+                          {% endif %}
+            />{{ page.answer4 }}</label><br/>
+            <button id="button">Valider</button>
+          </fieldset>
+        </form>
+
+        <div id="indice" style="display: none">
+          {{ page.indice }}
+        </div>
+
+        <div id="error" style="display: none">
+          {{ page.error }}
+        </div>
       </section>
 
       <footer>
