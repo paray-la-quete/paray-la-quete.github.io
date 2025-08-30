@@ -19,21 +19,27 @@
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const button = document.getElementById('button');
-        const answerInput = document.getElementById('answer');
+        const notAnswers = document.querySelectorAll('.notAnswer');
+        const answers = document.querySelectorAll('.answer');
         const indiceDiv = document.getElementById('indice');
         const errorDiv = document.getElementById('error');
 
-        button.addEventListener('click', function (e) {
-          e.preventDefault();
-          indiceDiv.style.display = 'none';
-          errorDiv.style.display = 'none';
-          if (answerInput.checked) {
-            indiceDiv.style.display = 'block';
-          } else {
+        notAnswers.forEach(function(img) {
+          img.addEventListener('click', function (e) {
+            e.preventDefault();
+            indiceDiv.style.display = 'none';
             errorDiv.style.display = 'block';
-          }
+          });
         });
+
+        answers.forEach(function(img) {
+          img.addEventListener('click', function (e) {
+            e.preventDefault();
+            indiceDiv.style.display = 'block';
+            errorDiv.style.display = 'none';
+          });
+        });
+
       });
     </script>
   </head>
@@ -49,6 +55,12 @@
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
           </div>
           </a>
+          <div class="custom-box">
+            <div class="custom-sub-box">
+              <a href="/lieux" class="custom-link">Notes</a>
+              <a href="/plan" class="custom-link">Plan</a>
+            </div>
+          </div>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
         </div>
@@ -66,43 +78,45 @@
 
       <section id="main_content">
         {{ content }}
-        <form>
-          <fieldset>
-            <legend>{{ page.question }}</legend>
-            <label><input type="radio" name="radio"
-            {% if page.answer == 1 %}
-            id="answer"
-            {% endif %}
-            />{{ page.answer1 }}</label><br/>
-            <label><input type="radio" name="radio"
-                          {% if page.answer == 2 %}
-                          id="answer"
-                          {% endif %}
-            />{{ page.answer2 }}</label><br/>
-            <label><input type="radio" name="radio"
-                          {% if page.answer == 3 %}
-                          id="answer"
-                          {% endif %}
-            />{{ page.answer3 }}</label><br/>
-            <label><input type="radio" name="radio"
-                          {% if page.answer == 4 %}
-                          id="answer"
-                          {% endif %}
-            />{{ page.answer4 }}</label><br/>
-            <button id="button">Valider</button>
-          </fieldset>
-        </form>
+        <div>
+          <div class="quizz">
+            <img {% if page.answer == 1 %}
+                 class="answer"
+                 {% else %}
+                 class="notAnswer"
+                 {% endif %}
+                 src="/assets/images/{{ page.answer1 }}">
+            <img {% if page.answer == 2 %}
+                 class="answer"
+                 {% else %}
+                 class="notAnswer"
+                 {% endif %} src="/assets/images/{{ page.answer2 }}">
+            <img {% if page.answer == 3 %}
+                 class="answer"
+                 {% else %}
+                 class="notAnswer"
+                 {% endif %} src="/assets/images/{{ page.answer3 }}">
+            <img {% if page.answer == 4 %}
+                 class="answer"
+                 {% else %}
+                 class="notAnswer"
+                 {% endif %} src="/assets/images/{{ page.answer4 }}">
+          </div>
+        </div>
+
 
         <div id="indice" style="display: none">
-          {{ page.indice }}
+          <p>Bien joué ! Voici l'indice :</p>
+          <p>{{ page.indice }}</p>
         </div>
 
         <div id="error" style="display: none">
-          {{ page.error }}
+          <p>Oups, ce n'est pas la bonne réponse !</p>
+          <p>Tu peux réessayer.</p>
         </div>
       </section>
 
-      <footer>
+      <footer class="footer">
         <span class="ribbon-outer">
           <span class="ribbon-inner">
             {% if site.github.is_project_page %}

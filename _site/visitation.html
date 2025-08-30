@@ -19,21 +19,27 @@
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const button = document.getElementById('button');
-        const answerInput = document.getElementById('answer');
+        const notAnswers = document.querySelectorAll('.notAnswer');
+        const answers = document.querySelectorAll('.answer');
         const indiceDiv = document.getElementById('indice');
         const errorDiv = document.getElementById('error');
 
-        button.addEventListener('click', function (e) {
-          e.preventDefault();
-          indiceDiv.style.display = 'none';
-          errorDiv.style.display = 'none';
-          if (answerInput.checked) {
-            indiceDiv.style.display = 'block';
-          } else {
+        notAnswers.forEach(function(img) {
+          img.addEventListener('click', function (e) {
+            e.preventDefault();
+            indiceDiv.style.display = 'none';
             errorDiv.style.display = 'block';
-          }
+          });
         });
+
+        answers.forEach(function(img) {
+          img.addEventListener('click', function (e) {
+            e.preventDefault();
+            indiceDiv.style.display = 'block';
+            errorDiv.style.display = 'none';
+          });
+        });
+
       });
     </script>
   </head>
@@ -49,6 +55,12 @@
             <h2>A la recherche du secret de Paray-Le-Monial</h2>
           </div>
           </a>
+          <div class="custom-box">
+            <div class="custom-sub-box">
+              <a href="/lieux" class="custom-link">Notes</a>
+              <a href="/plan" class="custom-link">Plan</a>
+            </div>
+          </div>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
         </div>
@@ -65,41 +77,43 @@
 
 
       <section id="main_content">
-        <p>Bravo ! Tu as trouvé l’une des cachettes !</p>
+        <p>Bravo, tu as trouvé l’une des cachettes !</p>
 
-<p>Pour avoir l’indice, il te faut résoudre l’énigme suivante :</p>
+<p>Avant d’avoir l’indice, peux-tu répondre à la question suivante :</p>
 
-        <form>
-          <fieldset>
-            <legend>la question</legend>
-            <label><input type="radio" name="radio"
-            
-            />answer 1</label><br/>
-            <label><input type="radio" name="radio"
-                          
-            />answer 2</label><br/>
-            <label><input type="radio" name="radio"
-                          
-                          id="answer"
-                          
-            />answer 3</label><br/>
-            <label><input type="radio" name="radio"
-                          
-            />answer 4</label><br/>
-            <button id="button">Valider</button>
-          </fieldset>
-        </form>
+<p>Quelle photo ne vient pas de la chapelle de la visitation ?</p>
+
+        <div>
+          <div class="quizz">
+            <img 
+                 class="notAnswer"
+                 
+                 src="/assets/images/visitation1.jpg">
+            <img 
+                 class="notAnswer"
+                  src="/assets/images/visitation2.jpeg">
+            <img 
+                 class="answer"
+                  src="/assets/images/visitation0.jpg">
+            <img 
+                 class="notAnswer"
+                  src="/assets/images/visitation3.jpg">
+          </div>
+        </div>
+
 
         <div id="indice" style="display: none">
-          ici l'indice
+          <p>Bien joué ! Voici l'indice :</p>
+          <p>bonnet blanc et blanc bonnet, je me dit dans les 2 sens</p>
         </div>
 
         <div id="error" style="display: none">
-          ici l'erreur
+          <p>Oups, ce n'est pas la bonne réponse !</p>
+          <p>Tu peux réessayer.</p>
         </div>
       </section>
 
-      <footer>
+      <footer class="footer">
         <span class="ribbon-outer">
           <span class="ribbon-inner">
             

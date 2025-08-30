@@ -1,14 +1,15 @@
 ---
 layout: question
-answer1: answer 1
-answer2: answer 2
-answer3: answer 3
-answer4: answer 4
+answer1: visitation1.jpg
+answer2: visitation2.jpeg
+answer3: visitation0.jpg
+answer4: visitation3.jpg
 answer: 3
 question: la question
-indice: ici l'indice
-error: ici l'erreur
+indice: bonnet blanc et blanc bonnet, je me dit dans les 2 sens
 ---
-Bravo ! Tu as trouvé l'une des cachettes !
+Bravo, tu as trouvé l'une des cachettes !
 
-Pour avoir l'indice, il te faut résoudre l'énigme suivante :
+Avant d'avoir l'indice, peux-tu répondre à la question suivante :
+
+Quelle photo ne vient pas de la chapelle de la visitation ?
