@@ -6,7 +6,7 @@ answer3: visitation0.jpg
 answer4: visitation3.jpg
 answer: 3
 question: la question
-indice: bonnet blanc et blanc bonnet, je me dit dans les 2 sens
+indice: Bonnet blanc et blanc bonnet, je me dit dans les 2 sens
 ---
 Bravo, tu as trouvé l'une des cachettes !
 

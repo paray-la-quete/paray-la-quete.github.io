@@ -63,7 +63,7 @@
 
         <section id="downloads">
           <span class="inner">
-            <a href="/lieux" class="zip">notes</a><a href="/plan" class="tgz">plan</a>
+            <a href="/lieux" class="zip">Notes</a><a href="/plan" class="tgz">Plan</a>
           </span>
         </section>
 
@@ -74,19 +74,22 @@
       <section id="main_content">
         {{ content }}
         <form>
-          <fieldset>
-            <legend>{{ page.question }}</legend>
-            <input type="text" id="answer"/><br/>
-            <button id="button">Valider</button>
+          <fieldset class="fieldset">
+            <input type="text" id="answer" class="valider"/><br/>
+            <button id="button" class="valider">Valider</button>
           </fieldset>
         </form>
 
         <div id="indice" style="display: none">
-          tadam
+          <p>Bravo ! Tu as trouvé le secret de Paray-Le-Monial !</p>
+          <p>Ici, Jésus a révélé son Cœur Sacré, signe de son Amour infini pour toi en particulier</p>
+          <p>Et il t'invite à vivre avec Lui et l'aimer en retour</p>
+          <img class="result" src="/assets/images/sacrecoeur2.png">
         </div>
 
         <div id="error" style="display: none">
-          oupsy
+          <p>Oups, ce n'est pas la bonne réponse !</p>
+          <p>Tu peux réessayer.</p>
         </div>
       </section>
 
