@@ -8,4 +8,4 @@ Il te permettra de trouver les lieux où sont cachés les indices.
 
 Bonne chance !
 
-![Plan de Paray-Le-Monial](assets/images/plan.png)
+![Plan de Paray-Le-Monial](assets/images/map.png)

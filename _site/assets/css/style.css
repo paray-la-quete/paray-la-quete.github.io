@@ -679,6 +679,7 @@ dd p:first-child {
   height: 100%;
   object-fit: cover;
   border: none;
+  box-shadow: none;
 }
 
 .indice-in {
@@ -698,6 +699,46 @@ dd p:first-child {
 .result {
   border: none;
   padding-bottom: 0.7em;
+  box-shadow: none;
+}
+
+#carousel {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.7em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.carousel-item {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  align-content: center;
+}
+
+.carousel-command {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 0.7em;
+}
+
+.command {
+  font: inherit;
+}
+
+.command img {
+  border: none;
+  box-shadow: none;
+  height: 90%;
+}
+
+#carousel .carousel-item img {
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
