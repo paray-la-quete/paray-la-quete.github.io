@@ -95,4 +95,13 @@ footer span.ribbon-inner a.instructions {
 
 .footer {
   margin: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#main_content {
+  margin-bottom: 100px;
 }
