@@ -2,6 +2,10 @@
 layout: note
 ---
 
-Les notes de Marie-Marguerite Auplat vont te mener à 5 lieux secrets de Paray-Le-Monial.
+Voici les notes de Marie-Marguerite Auplat.
 
-Peux-tu les retrouver ?
+Comme tu le vois, elles sont cryptées.
+
+Peux-tu les décrypter pour découvrir les 5 lieux secrets de Paray-Le-Monial où elle a caché les indices ?
+
+Dès que tu auras collecté assez d'indices, tu pourras tenter de résoudre l'énigme et découvrir le secret de Paray-le-Monial.
