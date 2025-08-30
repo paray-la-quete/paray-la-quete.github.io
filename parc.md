@@ -7,7 +7,7 @@ answer4: parc0.jpg
 answer: 4
 indice: Au jour solennel où se terminait la fête, Jésus, debout, s’écria "Si quelqu’un a soif, qu’il vienne à moi, et qu’il boive."
 ---
-Quelle progression, tu es très fort !
+Quelle progression, tu es très fort ! Bientôt tu auras tous les indices de Marie-Marguerite Auplat.
 
 Pour obtenir ton indice, il ne te reste qu'à répondre à cette question :
 

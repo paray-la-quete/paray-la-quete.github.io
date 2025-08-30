@@ -2,13 +2,13 @@
 layout: default
 ---
 
-La ville de Paray-Le-Monial cache un secret bien gardé.
+La ville de Paray-le-Monial cache un secret bien gardé.
 
 Marie-Marguerite Auplat a passé de longues années à percer le mystère.
 
-Marie-Marguerite Auplat a caché des indices dans 5 lieux secrets de la ville.
+Elle a caché des indices dans 5 lieux secrets de la ville.
 
-Elle a laissé des notes cryptées pour guider ceux qui oseront chercher.
+Pour guider ceux qui oseront chercher, elle a laissé des notes.
 
 Avec ton aide, peut-être que nous pourrons les déchiffrées et trouver les indices.
 
