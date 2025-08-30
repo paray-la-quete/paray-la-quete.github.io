@@ -1,0 +1,14 @@
+---
+layout: question
+answer1: claude0.jpg
+answer2: claude1.jpeg
+answer3: claude2.jpg
+answer4: claude3.jpg
+answer: 1
+indice: Je trône au sommet de Paris
+---
+Félicitation, tu es sur la bonne voie !
+
+Pour avoir l'indice, il te faut répondre à la question suivante :
+
+Quelle photo ne vient pas de la chapelle de Claude la Colombière ?
