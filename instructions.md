@@ -17,7 +17,7 @@ scannez-le pour accéder à la page du lieu.
 Vous y trouverez une question et,
 si vous répondez correctement, un indice pour résoudre l'énigme finale.
 
-Lorsque vous aurez collecté les 5 indices,
+Lorsque vous aurez collecté les 4 indices,
 vous pourrez tenter de résoudre l'énigme finale
 et découvrir ainsi le secret de Paray-le-Monial.
 

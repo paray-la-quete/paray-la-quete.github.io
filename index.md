@@ -6,7 +6,7 @@ La ville de Paray-le-Monial cache un secret bien gardé.
 
 Marie-Marguerite Auplat a passé de longues années à percer le mystère.
 
-Elle a caché des indices dans 5 lieux secrets de la ville.
+Elle a caché des indices dans 4 lieux secrets de la ville.
 
 Pour guider ceux qui oseront chercher, elle a laissé des notes.
 
